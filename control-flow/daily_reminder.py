@@ -1,11 +1,24 @@
 task = input("Enter your task:")
 priority = input("Priority (high/medium/low):")
-istimebound = input("Is it time-bound? (yes/no):")
+time_bound = input("Is it time-bound? (yes/no):")
 
-if istimebound == "yes":
-    print(
-        f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
+msg = ""
+match priority:
+    case "high":
+        priority = "high"
 
+    case "medium":
+        priority = "medium"
+        # a = f"Reminder: '{task}' is a {priority} priority task"
+    case "low":
+        priority = "low"
+
+
+if time_bound == "yes":
+    msg = f"Reminder: '{task}' is a {
+        priority} priority task that requires immediate attention today!"
 else:
-    print(
-        f"Reminder: '{task}' is a {priority} priority task. Consider completing it when you have free time.")
+    msg = f"Note: '{task}' is a {
+        priority} priority task. Consider completing it when you have free time."
+
+print(msg)
