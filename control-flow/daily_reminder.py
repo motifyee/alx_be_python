@@ -15,10 +15,8 @@ match priority:
 
 
 if time_bound == "yes":
-    msg = f"Reminder: '{task}' is a {
-        priority} priority task that requires immediate attention today!"
+    print(f"Reminder: '{task}' is a {
+          priority} priority task that requires immediate attention today!")
 else:
-    msg = f"Note: '{task}' is a {
-        priority} priority task. Consider completing it when you have free time."
-
-print(msg)
+    print(f"Note: '{task}' is a {
+          priority} priority task. Consider completing it when you have free time.")
