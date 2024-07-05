@@ -3,11 +3,11 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 
 def convert_to_celsius(fahrenheit):
-    print(fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR)
+    return (fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR)
 
 
 def convert_to_fahrenheit(celsius):
-    print(celsius * CELSIUS_TO_FAHRENHEIT_FACTOR)
+    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR)
 
 
 temperature = float(input("Enter the temperature to convert: "))
