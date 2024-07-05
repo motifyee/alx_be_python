@@ -18,3 +18,5 @@ match (temp_type):
         print(f"{temperature}°F is {convert_to_celsius(temperature)}°C")
     case 'C':
         print(f"{temperature}°C is {convert_to_fahrenheit(temperature)}°F")
+    case _:
+        print("Invalid temperature. Please enter a numeric value.")
