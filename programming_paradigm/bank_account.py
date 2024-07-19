@@ -7,7 +7,7 @@ class BankAccount:
         self.account_balance += amount
 
     def withdraw(self, amount):
-        self.account_balance -=
+        self.account_balance -= amount
         return amount > self.account_balance
 
     def display_balance(self):
