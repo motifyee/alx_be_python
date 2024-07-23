@@ -19,8 +19,8 @@ class Library:
         # self._books.pop(idx)
         self._books[idx]._is_checked_out = True
 
-    def return_book(self, title):
-        idx = [x.title for x in self._books].index(title)
+    def return_book(self):
+        idx = [x.title for x in self._books].index(0)
         return self._books[idx]
 
     def list_available_books(self):
