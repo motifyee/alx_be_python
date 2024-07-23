@@ -1,22 +1,29 @@
 class Book:
     _is_checked_out = False
 
-    def __init__(self, title, author) -> None:
+    def __init__(self, title, author):
         self.title = title
         self.author = author
+        self._is_checked_out = False
 
 
 class Library:
-    _books = []
+    def __init__(self):
+        self._books = []
 
-    def add_book():
-        _book.append(Book())
+    def add_book(self, book):
+        self._books.append(book)
 
-    def check_out_book(title):
-        pass
+    def check_out_book(self, title):
+        idx = [x.title for x in self._books].index(title)
+        # self._books.pop(idx)
+        self._books[idx]._is_checked_out = True
 
-    def return_book(title):
-        pass
+    def return_book(self, title):
+        idx = [x.title for x in self._books].index(title)
+        return self._books[idx]
 
-    def list_available_books():
-        pass
+    def list_available_books(self):
+        for t in [x.title for x in self._books]:
+            if not t._is_checked_out:
+                print(t)
