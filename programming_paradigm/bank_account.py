@@ -8,7 +8,7 @@ class BankAccount:
 
     def withdraw(self, amount):
         self.account_balance -= amount
-        return amount > self.account_balance
+        return self.account_balance >= amount
 
     def display_balance(self):
         print(f"Current Balance: ${self.account_balance}")
