@@ -11,4 +11,4 @@ class BankAccount:
         return self.account_balance >= amount
 
     def display_balance(self):
-        print(f"Current Balance: ${float(self.account_balance)}")
+        print(f"Current Balance: ${round(self.account_balance, 2)}")
