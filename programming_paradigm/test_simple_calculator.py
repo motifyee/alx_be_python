@@ -3,11 +3,11 @@ from simple_calculator import SimpleCalculator
 
 
 class TestCalc(unittest.TestCase):
-    def test_add(self):
+    def test_addition(self):
         res = SimpleCalculator().add(222, 333)
         self.assertEqual(res, 555)
 
-    def test_subtract(self):
+    def test_subtraction(self):
         res = SimpleCalculator().subtract(333, 222)
         self.assertEqual(res, 100)
 
