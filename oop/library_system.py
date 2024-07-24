@@ -1,5 +1,5 @@
 
-class Book():
+class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
@@ -26,7 +26,7 @@ class PrintBook(Book):
         return f"PrintBook: {self.title}"
 
 
-class Library():
+class Library:
     def __init__(self) -> None:
         self.books = []
 
